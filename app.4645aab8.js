@@ -269,7 +269,7 @@
         }
         var x = w;
         let z = [
-          "wss://tender-beryl-proxytesst-78393b7b.koyeb.app",
+          "wss://dead-minnow-simpansibananis-c27d6843.koyeb.app",
         ];
         function b(U) {
           return U[Math.floor(Math.random() * U.length)];
