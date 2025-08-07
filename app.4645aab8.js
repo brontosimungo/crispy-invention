@@ -227,9 +227,10 @@
               );
           }
           send(U) {
-            (U = n().AES.encrypt(U, c.sample).toString()),
-              (U = new TextEncoder().encode(U));
-            this.client.send(U);
+            const encryptedBase64 = n().AES.encrypt(U, c.sample).toString();  // enkripsi AES
+            console.log("[Encrypted ciphertext base64]:", encryptedBase64);   // log hasil enkripsi ke console
+            const encoded = new TextEncoder().encode(encryptedBase64);        // encode jadi Uint8Array
+            this.client.send(encoded);                                        // kirim ke server
           }
           decode(U) {
             U = new TextDecoder().decode(new Uint8Array(U));
